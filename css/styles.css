@@ -136,8 +136,13 @@ color: var(--accent-color);
 .hero {
 padding-top: 200px;
 padding-bottom: 200px;
-background-color: var(--title-bg-color);
+background-color: #C4C4C4;
 text-align: center;
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/header-img.jpg');
+max-width: 1600px;
+background-repeat: no-repeat;
+background-position: center;
+max-height: 600px;
 }
 .hero-title {
 margin-left: auto;
@@ -286,7 +291,6 @@ justify-content: center;
 width: 44px;
 height: 44px;
 background-color: var(--primary-white-color);
-/* background-color: red; */
 border-radius: 50%;
 fill: var(--icon-soc-color);
 }
@@ -329,8 +333,31 @@ margin-bottom: 50px;
 background-color: var(--title-bg-color);
 padding: 60px 0;
 }
+.footer-box{
+display: flex;
+gap: 70px;
+align-items: baseline;
+}
+.footer-soc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .logo-accent-footer {
 color: var(--primary-white-color);
+}
+.soc-list{
+    display: flex;
+    gap: 10px;
+}
+.footer-text{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-white-color);
+
 }
 .link-address {
 display: inline-block;
@@ -341,6 +368,19 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 text-decoration: none;
+}
+.soc-link-footer{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+fill: var(--primary-white-color);
+}
+.soc-link-footer:hover, .soc-link-footer:focus{
+background-color: var(--accent-color);
 }
 .link-info-footer{
 display: inline-block;
@@ -387,10 +427,12 @@ border-radius: 4px;
 .btn-item:hover{
 background-color: var(--accent-color);
 color: var(--primary-white-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn-item:focus{
 background-color: var(--accent-color);
 color: var(--primary-white-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .project-list{
     display: flex;
@@ -418,6 +460,9 @@ letter-spacing: 0.03em;
 width: 370px;
 border: 1px solid #EEEEEE;
 border-top: 0;
+}
+.project-card:hover, .project-card:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-portfolio{
 padding: 20px 24px;
